@@ -1,16 +1,16 @@
 import './ExploreContainer.css';
+import { IonTabButton, IonIcon, IonBreadcrumbs, IonBreadcrumb } from '@ionic/react';
 
 interface ContainerProps { }
 
 const ExploreContainer: React.FC<ContainerProps> = () => {
   return (
-    <div id="container">
-       </ion-tab-button>
-    <ion-tab-button tab="search">
-      <ion-icon name="search"></ion-icon>
-      Search
-    </ion-tab-button>
-    </div>
+    <IonBreadcrumbs>
+      <IonBreadcrumb href="#home">Home</IonBreadcrumb>
+      <IonBreadcrumb href="#electronics">Electronics</IonBreadcrumb>
+      <IonBreadcrumb href="#cameras">Cameras</IonBreadcrumb>
+      <IonBreadcrumb href="#film">Film</IonBreadcrumb>
+    </IonBreadcrumbs>
   );
 };
 
